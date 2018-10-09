@@ -15,7 +15,7 @@ function deepestChild(){
       deepestChild = element;
       return getChildren(element);
     } else {
-      return 
+      return
     }
 
   }
