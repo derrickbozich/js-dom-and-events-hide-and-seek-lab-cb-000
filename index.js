@@ -15,10 +15,11 @@ function deepestChild(){
       deepestChild = element;
       return getChildren(element);
     } else {
-      return
+      return 
     }
 
   }
+  getChildren(div);
   return deepestChild;
 }
 
