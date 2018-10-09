@@ -17,10 +17,10 @@ function nestedTarget(){
 //     } else {
 //       return deepestChild;
 //     }
-// 
+//
 //   }
-// 
-}
+//
+// }
 
 function deepestChild() {
   let node = document.getElementById('grand-node')
