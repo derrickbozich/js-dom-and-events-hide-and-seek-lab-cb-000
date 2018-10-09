@@ -6,7 +6,7 @@ function nestedTarget(){
   return document.getElementById("nested").querySelector('.target');
 }
 
-function deeeepestChild(){
+function deepestChild(){
   const div = document.getElementById("grand-node");
   let deepestChild;
   function getChildren(div){
@@ -15,21 +15,21 @@ function deeeepestChild(){
       deepestChild = element;
       return getChildren(element);
     } else {
-      return 
+      return
     }
 
   }
   return deepestChild;
 }
 
-function deepestChild() {
-  let node = document.getElementById('grand-node')
-  let nextNode = node.children[0]
-
-  while (nextNode) {
-    node = nextNode
-    nextNode = node.children[0]
-  }
-
-  return node
-}
+// function deepestChild() {
+//   let node = document.getElementById('grand-node')
+//   let nextNode = node.children[0]
+//
+//   while (nextNode) {
+//     node = nextNode
+//     nextNode = node.children[0]
+//   }
+//
+//   return node
+// }
