@@ -9,14 +9,15 @@ function nestedTarget(){
 function deepestChild(){
   const div = document.getElementById("grand-node");
   let deepestChild;
-  for (let element of div){
-
-    if (element.children[0] != null){
-      debugger
-      deepestChild = element.children[0];
+  function getChildren(div){
+    let element = div.children[0];
+    if (element != null) {
+      deepestChild = element;
+      return getChildren(element);
     } else {
       return deepestChild;
     }
+
   }
 
 }
