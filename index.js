@@ -25,8 +25,8 @@ function deepestChild(){
 
 function increaseRankBy(n){
   let list = document.querySelector('.ranked-list');
-  for (let i = 0; i < list.length; i++ ){
-  
-    
+  for (let [index, element] of list){
+    list[index]
+
   }
 }
